@@ -135,7 +135,13 @@ export default function LandingPage() {
         </div>
       </section>
 
-     
+      {/* 7. CTA Section */}
+      <section className="py-24 text-center px-6">
+        <h2 className="text-5xl font-black mb-8">Ready to Start Building?</h2>
+        <button className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-black transition-all">
+          Join Our Community
+        </button>
+      </section>
     </main>
   );
 }
