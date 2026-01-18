@@ -44,6 +44,32 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+
+      {/* 3. Features (Cards) */}
+      <section className="py-24 px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-extrabold text-center mb-16">
+            Core Features
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {['Fast Performance', 'Secure Auth', 'Responsive UI'].map(title => (
+              <div
+                key={title}
+                className="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl hover:shadow-indigo-100 transition-all group"
+              >
+                <div className="w-14 h-14 bg-indigo-50 rounded-2xl mb-6 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                  <div className="w-6 h-6 bg-indigo-600 group-hover:bg-white rounded-full"></div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{title}</h3>
+                <p className="text-slate-500 leading-relaxed">
+                  Built with the best practices to ensure your application runs
+                  smoothly on any device.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
