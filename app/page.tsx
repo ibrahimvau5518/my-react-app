@@ -70,6 +70,36 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* 4. About Us Section */}
+      <section className="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="bg-indigo-100 h-[400px] rounded-[40px] overflow-hidden">
+          <img
+            src="https://picsum.photos/800/600?tech"
+            className="w-full h-full object-cover"
+            alt="tech"
+          />
+        </div>
+        <div>
+          <h2 className="text-4xl font-extrabold mb-6">
+            Built for Developers, <br />
+            By Developers
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            This project is a perfect starter for anyone looking to build a
+            clean and scalable Next.js 15 application.
+          </p>
+          <ul className="space-y-4 font-medium text-slate-700">
+            {[
+              '✓ Clean Code Architecture',
+              '✓ Optimized for Speed',
+              '✓ Beautiful Tailwind UI',
+            ].map(li => (
+              <li key={li}>{li}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }
