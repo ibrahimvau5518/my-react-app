@@ -2,14 +2,16 @@
 import Link from 'next/link';
 
 export default async function ItemsPage() {
-  const res = await fetch('http://localhost:5000/api/items', {
+  const res = await fetch('https://my-next-server-five.vercel.app/api/items', {
     cache: 'no-store',
   });
   const items = await res.json();
 
   return (
-    <div className="p-10 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold mb-10 text-center">Our Collection</h1>
+    <div className="bg-gray-50 p-10 max-w-7xl mx-auto">
+      <h1 className="text-black text-3xl font-bold mb-10 text-center">
+        Our Collection
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {items.map((item: any) => (
           <div

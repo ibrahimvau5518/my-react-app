@@ -48,10 +48,10 @@ export default function LandingPage() {
       {/* 3. Features (Cards) */}
       <section className="py-24 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-extrabold text-center mb-16">
+          <h2 className="text-indigo-600 text-4xl font-extrabold text-center mb-16">
             Core Features
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="text-black grid md:grid-cols-3 gap-8">
             {['Fast Performance', 'Secure Auth', 'Responsive UI'].map(title => (
               <div
                 key={title}
@@ -81,7 +81,7 @@ export default function LandingPage() {
           />
         </div>
         <div>
-          <h2 className="text-4xl font-extrabold mb-6">
+          <h2 className="text-black text-4xl font-extrabold mb-6">
             Built for Developers, <br />
             By Developers
           </h2>
@@ -137,7 +137,9 @@ export default function LandingPage() {
 
       {/* 7. CTA Section */}
       <section className="py-24 text-center px-6">
-        <h2 className="text-5xl font-black mb-8">Ready to Start Building?</h2>
+        <h2 className="text-indigo-600 text-5xl font-black mb-8">
+          Ready to Start Building?
+        </h2>
         <button className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-black transition-all">
           Join Our Community
         </button>

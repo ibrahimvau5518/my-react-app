@@ -13,11 +13,14 @@ export default function AddItem() {
       image: `https://picsum.photos/seed/${Math.random()}/600/400`,
     };
 
-    const res = await fetch('http://localhost:5000/api/items', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+    const res = await fetch(
+      'https://my-next-server-five.vercel.app/api/items',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      },
+    );
 
     if (res.ok) {
       // রিকোয়ারমেন্ট অনুযায়ী Toast/Alert

@@ -18,7 +18,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex justify-center mt-20">
+    <div className="flex justify-center mt-20 p-10">
       <form
         onSubmit={handleLogin}
         className="border p-10 flex flex-col gap-4 shadow-lg"
@@ -26,13 +26,13 @@ export default function LoginPage() {
         <h2 className="text-2xl font-bold">Login</h2>
         <input
           type="email"
-          placeholder="admin@example.com"
+          placeholder="Email"
           className="border p-2"
           onChange={e => setEmail(e.target.value)}
         />
         <input
           type="password"
-          placeholder="password123"
+          placeholder="Password"
           className="border p-2"
           onChange={e => setPassword(e.target.value)}
         />
