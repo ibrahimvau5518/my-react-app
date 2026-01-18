@@ -26,7 +26,24 @@ export default function LandingPage() {
         </div>
       </section>
 
-      
+      {/* 2. Stats Section */}
+      <section className="py-24 border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
+          {[
+            ['99%', 'Uptime'],
+            ['24/7', 'Support'],
+            ['150+', 'Components'],
+            ['5k+', 'Users'],
+          ].map(([val, label]) => (
+            <div key={label} className="text-center">
+              <h3 className="text-5xl font-black text-slate-900 mb-2">{val}</h3>
+              <p className="text-slate-500 font-medium uppercase tracking-wider text-sm">
+                {label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
