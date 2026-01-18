@@ -123,6 +123,19 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* 6. Testimonial */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center bg-indigo-600 p-16 rounded-[50px] text-white shadow-2xl shadow-indigo-300">
+          <p className="text-2xl font-medium italic mb-8">
+            "This platform provides the cleanest UI I've ever used. The
+            performance is top-notch!"
+          </p>
+          <h5 className="text-xl font-bold italic">Ibrahim, Lead Developer</h5>
+        </div>
+      </section>
+
+     
     </main>
   );
 }
