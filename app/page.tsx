@@ -100,6 +100,29 @@ export default function LandingPage() {
           </ul>
         </div>
       </section>
+
+      {/* 5. Services Section */}
+      <section className="py-24 bg-slate-900 text-white px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-extrabold mb-12">
+            Our Specialized Services
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {['Web Dev', 'App Design', 'Cloud Hosting', 'Consulting'].map(s => (
+              <div
+                key={s}
+                className="p-8 border border-slate-700 rounded-3xl hover:bg-slate-800 transition-all cursor-default text-left"
+              >
+                <h4 className="text-xl font-bold mb-2">{s}</h4>
+                <p className="text-slate-400 text-sm">
+                  Professional solutions tailored to your specific business
+                  needs.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
